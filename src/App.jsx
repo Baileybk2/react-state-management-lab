@@ -111,7 +111,10 @@ const App = () => {
     return (
       <>
         <img src={fighter.img}></img>
-        {fighter.name},{fighter.price},{fighter.strength},{fighter.agility}
+        <p>Name: {fighter.name},</p>
+        <p>Price: {fighter.price},</p>
+        <p>Strength: {fighter.strength},</p>
+        <p>Agility: {fighter.agility}</p>
       </>
     );
   };
