@@ -117,7 +117,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div class="container">
       <h1>Zombie Fighters</h1>
       <p>Money: ${money}</p>
       <p>Team strength: {totalStrength}</p>
@@ -137,6 +137,7 @@ const App = () => {
           ))}
         </ul>
       )}
+      <h2>Available Fighters</h2>
       <ul>
         {zombieFighters.map((fighter, index) => (
           <li key={index}>
@@ -145,7 +146,7 @@ const App = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
